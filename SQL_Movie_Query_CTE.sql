@@ -1,5 +1,10 @@
--- Common Table Expression (CTE) to showcase film data
-WITH FilmData AS (
+-# Using the same data from the Movie Store, I wanted to create a Common Table Expression (or a CTE) to showcase some more film data findings. 
+    
+-# This query now retrieves film data from a my Movie Rental Store Database, filtering films released in or after 2005. 
+-# It then creates a Common Table Expression (CTE) named "FilmData" to organize and simplify the displayed data. 
+-# Finally, the main query selects specific film attributes from the CTE, showcasing essential information such as movie title, release year, rental cost, runtime, replacement fee, and rating.
+
+    WITH FilmData AS (
     SELECT
         film.film_id,
         film.title AS Movie_Title,
