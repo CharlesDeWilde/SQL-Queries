@@ -1,3 +1,7 @@
+#--This Query is based around a datset from a local Movie store.
+#--In summary, this particular query retrieves information about films released in or after the year 2005, joining the "film" table with the "film_category" table. 
+It then groups the results by various film attributes and orders them alphabetically by movie title.--#
+
 SELECT
     film.film_id,
     film.title AS Movie_Title,
